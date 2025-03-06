@@ -1,0 +1,110 @@
+/* Fullscreen hero section */
+#home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1E1E2F, #3A3A52); /* Dark modern gradient */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* Profile Image - Now Above the Text */
+#img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+#img img {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.4); /* Golden glow effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+#img img:hover {
+    transform: scale(1.1);
+}
+
+/* Headline */
+#home h1 {
+    font-size: 4rem; /* Bigger, more impactful */
+    font-weight: 800; /* Bolder for a premium feel */
+    color: #FFD700; /* Elegant gold */
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Adds a refined touch */
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5); /* Soft glowing effect */
+    background: linear-gradient(45deg, #FFD700, #FFA500); /* Gold-Orange gradient */
+    background-clip: text; /* Standard version */
+    color: transparent;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Subheading */
+#home h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #C0C0C0; /* Light silver */
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Button */
+button {
+    background: #FFD700; /* Gold */
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home {
+        padding: 20px;
+    }
+
+    #home h1 {
+        font-size: 2.8rem;
+    }
+
+    #home h3 {
+        font-size: 1.5rem;
+    }
+
+    #img img {
+        width: 140px;
+    }
+}
